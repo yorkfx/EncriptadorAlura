@@ -1,0 +1,43 @@
+<!-- Miguel Mendez || Github @yorkfx  -->
+<!-- Curso Principiante en Programación G6 - Alura ONE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura || Miguel Mendez @yorkfx  || Curso Principiante en Programación G6 -  Alura ONE
+    </title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Alura</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <textarea name="areaTexto" id="areaTexto" placeholder="Ingrese el texto aqui"></textarea>
+                <p><a href="#help" id="btnHelp"></a>Solo letras minúsculas y sin acentos</p>
+                <div class="row" id="buttons">
+                    <div class="col"><button id="btnEncriptar" onclick="encriptar();">Encriptar</button></div>
+                    <div class="col"><button id="btnDesencriptar" onclick="desencriptar();" disabled>Desencriptar</button></div>
+                </div>
+            </div>
+            <div class="col" id="col2">
+                <img src="img/muneco.svg" alt="">
+                <h2 style="display: none;">Ningún mensaje fue encontrado</h2>
+                <h4 style="display: none;">Ingresa el texto que desees encriptar o desencriptar.</h4>
+                <div id="areaDesencriptado" style="display: none;">
+                    <div id="textoEncriptado" contenteditable="true"></div>
+                    <button id="btnCopiar" onclick="copiarTexto();">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <footer>
+        <p>Curso Principiante en Programación G6 - Alura ONE || Miguel Angel Mendez || Github <a href="https://github.com/yorkfx">@yorkfx</a></p>
+    </footer>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script> -->
+    <script src="app.js"></script>
+</body>
+</html>
